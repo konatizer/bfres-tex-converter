@@ -20,31 +20,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import struct
+def bytes_to_string(data, pos=0, end=0):
+    if not end:
+        end = data.find(b'\0', pos)
+        if end == -1:
+            return data[pos:].decode('utf-8')
 
-
-class GX2Surface(struct.Struct):
-    def __init__(self):
-        super().__init__('>16I')
-
-    def data(self, data, pos):
-        (self.dim,
-         self.width,
-         self.height,
-         self.depth,
-         self.numMips,
-         self.format_,
-         self.aa,
-         self.use,
-         self.imageSize,
-         self.imagePtr,
-         self.mipSize,
-         self.mipPtr,
-         self.tileMode,
-         self.swizzle,
-         self.alignment,
-         self.pitch) = self.unpack_from(data, pos)
-
-
-class empty():
-    pass
+    return data[pos:end].decode('utf-8')

@@ -86,6 +86,12 @@ tileModes = {
     0x10: 'GX2_TILE_MODE_LINEAR_SPECIAL',
 }
 
+types = {
+    0: "1D", 1: "2D", 2: "3D",
+    3: "Cube", 4: "1D Array", 5: "2D Array",
+    6: "2D Multisample", 7: "2D Multisample Array",
+    8: "Cube Array",
+}
 compSels = {
     0: "Red", 1: "Green",
     2: "Blue", 3: "Alpha",

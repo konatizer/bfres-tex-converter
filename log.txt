@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+2020-12-22, 05:29:21
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kona/prj/switch-mod/game-mod/_tool/test/tools/BFRES-Tool/main.py", line 718, in <module>
+    main()
+  File "/home/kona/prj/switch-mod/game-mod/_tool/test/tools/BFRES-Tool/main.py", line 714, in main
+    sys.exit(app.exec_())
+KeyboardInterrupt

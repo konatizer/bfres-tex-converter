@@ -24,11 +24,12 @@ from math import ceil
 import os.path
 from PyQt5 import QtWidgets
 
-from bfres_bytes import bytes_to_string
+from bytes import bytes_to_string
 import addrlib
 import dds
-import bfres_globals as globals
-from bfres_structs import struct, GX2Surface, empty
+import bcn
+import globals
+from structs import struct, GX2Surface, empty
 
 
 def read(f):
